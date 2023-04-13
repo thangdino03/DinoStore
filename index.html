@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dino Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="menu-wrapper padding-section">
+            <div class="main-menu">
+                <div class="image"><a href="" class="tenlogo">DinoStore</a></div>
+                <div class="main-menu-a">
+                    <div class="menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Trang Chủ</a></li>
+                                <li><a href="#">Giới thiệu</a></li>
+                                <li><a href="#">Sản Phẩm</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+            <div class="icontaskbar">
+                <div class="icon-1">
+                    <a href="HTML/login.html">Đăng Nhập</a>
+                    <a href="HTML/signup.html">Đăng Kí</a>
+                    <a href="#" class="giohanggne"><i class="fa-solid fa-cart-shopping">0</i></a>
+                </div>
+                <div class="shopping-cart">
+                    <h2>Giỏ hàng</h2>
+                    <ul class="cart-list">
+                        <li></li>
+                    </ul>
+                    <div class="cart-total">
+                        <p>Tổng giá trị đơn hàng: <span class="total-price"></span></p>
+                        <button>Mua Hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div id="solai">
+        <!-- Thẻ Chứa Slideshow -->
+        <div class="slideshow_container">
+            <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 14</div>
+                <img src="image/ipgiasoc.jpg" class="solaianh">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 14</div>
+                <img src="image/iiiip.jpg" class="solaianh">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 14</div>
+                <img src="image/iphone 14 pro max-2.jpg" class="solaianh">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 /14</div>
+                <img src="image/iphone 14 pro max-3.jpg" class="solaianh">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 /14</div>
+                <img src="image/iphone 14 pro max-4.jpg" class="solaianh">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 /14</div>
+                <img src="image/iphone 14 pro max-6.webp" class="solaianh">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">7 /14</div>
+                <img src="image/samsunggg.jpg" class="solaianh">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 14</div>
+                <img src="image/Samsunggg1.jpg" class="solaianh">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">9 / 14</div>
+                <img src="image/Samsunggg2.png" class="solaianh">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">10 /14</div>
+                <img src="image/Samsunggg3.png" class="solaianh">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">11 / 14</div>
+                <img src="image/Samsunggg4.jpg" class="solaianh">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">12 / 14</div>
+                <img src="image/samsunggg5.jpg" class="solaianh">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">13 / 14</div>
+                <img src="image/sliderIphone.jfif" class="solaianh">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">14 / 14</div>
+                <img src="image/sliderIphone2.jfif" class="solaianh">
+                <div class="text"></div>
+            </div>
+            <!-- Nút điều khiển mũi tên -->
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        <!-- Nút tròn điều khiển slideshow-->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+            <span class="dot" onclick="currentSlide(13)"></span>
+            <span class="dot" onclick="currentSlide(15)"></span>
+        </div>
+    </div>
+
+    <!-- media  -->
+    <div id="videotong">
+        <h2>Giới thiệu Dynamic Island iPhone 14 Pro</h2>
+        <div id="player-container">
+            <video id="myplayer" width="1366" height="768" autoplay>
+                <source src="./image/gthieuip14.mp4" type="video/mp4" />
+            </video>
+            <div id="controls">
+                <button onclick="playPause()">Play/Pause</button>
+                <button onclick="stopVideo ()">Stop</button>
+                <button onclick="phatlaivideo ()">Replay</button>
+                <button onclick="tangamluong ()">Volume (+)</button>
+                <button onclick="Giamamluong ()">Volume (-)</button>
+                <button onclick="tattieng ()">Mute/Unmute</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <body onload="phatlaivideo()"></body>
+    <marquee behavior="" direction="">Siêu khuyến mãi! giảm giá đến 300$ khi mua bộ 4 iphone mới iPhone 14, iphone 14
+        Pro và đặc biệt khi mua iPhone 14
+        Pro Max còn có cơ hội nhận được phần quà trị giá lên đến 300$! - Bộ 3 siêu phẩm samsung galaxy s23, samsung
+        galaxy s23 plus, samsung galaxy s23 unltra ra mắt! ~~ đặt trước để nhận ưu đãi khủng và quà tặng trị giá lên đến
+        250$ đặt nhanh, số lượng có hạn </marquee>
+
+
+
+        <!-- flash sale -->
+        <div class="flash-sale">
+            <div class="flash-sale-timer">
+              <h2>FLASH SALE</h2>
+              <div class="timer">
+                <div>
+                  <span id="days"></span>
+                  <div class="smalltext">Days</div>
+                </div>
+                <div>
+                  <span id="hours"></span>
+                  <div class="smalltext">Hours</div>
+                </div>
+                <div>
+                  <span id="minutes"></span>
+                  <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+                  <span id="seconds"></span>
+                  <div class="smalltext">Seconds</div>
+                </div>
+              </div>
+            </div>
+            <div class="flash-sale-products">
+              <!-- Add products here -->
+            </div>
+          </div>
+          
+    <!-- sản phẩm -->
+    <div class="container">
+        <div class="product">
+            <img src="image/iptrang.webp" alt="">
+            <h3>iPhone 14 Pro Max Trắng</h3>
+            <del class="gray">2200$</del>
+            <span class="red">1900$</span> <br>
+            <div class="icon">
+                <span class="themvaocart"><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span class="timsp"><i class="fa-solid fa-heart"></i></span>
+            </div>
+        </div>
+
+        <div class="product">
+
+            <img src="image/ipden.png" alt="">
+            <h3>iPhone 14 Pro Max Đen</h3>
+            <del class="gray">2200$</del>
+            <span class="red">1900$</span> <br>
+            <div class="icon">
+                <span class="themvaocart"><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span class="timsp"><i class="fa-solid fa-heart" ></i></span>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="image/iptrang.webp" alt="">
+            <h3>iPhone 14 Pro Max</h3>
+            <del class="gray">2200$</del>
+            <span class="red">1900$</span> <br>
+            <div class="icon">
+                <span class="themvaocart"><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span class="timsp"><i class="fa-solid fa-heart"></i></span>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="image/ipden.png" alt="">
+            <h3>iPhone 14 Pro Max</h3>
+            <del class="gray">2200$</del>
+            <span class="red">1900$</span> <br>
+            <div class="icon">
+                <span class="themvaocart"><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span class="timsp"><i class="fa-solid fa-heart"></i></span>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="image/Iphone13promax.jpg" alt="">
+            <h3>iPhone 13 Pro Max 1TB</h3>
+            <del class="gray">2500$</del>
+            <span class="red">2200$</span> <br>
+            <div class="icon">
+                <span class="themvaocart"><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span class="timsp"><i class="fa-solid fa-heart"></i></span>
+            </div>
+        </div>
+        <div class="product">
+            <img src="image/iPhone13pro.jpg" alt="">
+            <h3>iPhone 13 Pro 256GB</h3>
+            <del class="gray">2200$</del>
+            <span class="red">1900$</span> <br>
+            <div class="icon">
+                <span class="themvaocart"><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span class="timsp"><i class="fa-solid fa-heart"></i></span>
+            </div>
+        </div>
+        <div class="product">
+            <img src="image/Iphone13_pink.jpg" alt="">
+            <h3>iPhone 13 128GB pink</h3>
+            <del class="gray">990$</del>
+            <span class="red">790$</span> <br>
+            <div class="icon">
+                <span class="themvaocart"><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span class="timsp"><i class="fa-solid fa-heart"></i></span>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="image/iphone13mini.jpg" alt="">
+            <h3>iPhone 13 Mini</h3>
+            <del class="gray">690$</del>
+            <span class="red">590$</span> <br>
+            <div class="icon">
+                <span class="themvaocart"><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span class="timsp"><i class="fa-solid fa-heart"></i></span>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="image/iPhone12ProMax.jpg" alt="">
+            <h3>iPhone 12 Pro Max 512Gb</h3>
+            <del class="gray">2490$</del>
+            <span class="red">1990$</span> <br>
+            <div class="icon">
+                <span class="themvaocart"><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span class="timsp"><i class="fa-solid fa-heart"></i></span>
+            </div>
+        </div>
+        <div class="product">
+            <img src="image/iphone12pro.jpg" alt="">
+            <h3>iPhone 12 Pro</h3>
+            <del class="gray">1590$</del>
+            <span class="red">1190$</span> <br>
+            <div class="icon">
+                <span class="themvaocart"><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span class="timsp"><i class="fa-solid fa-heart"></i></span>
+            </div>
+        </div>
+        <div class="product">
+            <img src="image/iphone12.jpg" alt="">
+            <h3>iPhone 12 </h3>
+            <del class="gray">890$</del>
+            <span class="red">690$</span> <br>
+            <div class="icon">
+                <span class="themvaocart"><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span class="timsp"><i class="fa-solid fa-heart"></i></span>
+            </div>
+        </div>
+        <div class="product">
+            <img src="image/iphone12mini.jpg" alt="">
+            <h3>iPhone 12 Mini</h3>
+            <del class="gray">690$</del>
+            <span class="red">590$</span> <br>
+            <div class="icon">
+                <span class="themvaocart"><i class="fa-solid fa-plus"></i></span>
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span class="timsp"><i class="fa-solid fa-heart"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- form và kiểm lỗi  -->
+    <h1>Đặt hàng trước</h1>
+    <form onsubmit="return validateForme()">
+        <label for="name" oninput="validateName()" id="name">Tên khách hàng:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="gender">Giới tính:</label>
+        <input type="radio" id="gender" name="gender" value="male">Nam
+        <input type="radio" id="gender" name="gender" value="female">Nữ
+        <input type="radio" id="gender" name="gender" value="other">Khác<br><br>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="address">Địa chỉ:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="product">Tên sản phẩm đặt:</label>
+        <input type="text" id="product" name="product"><br><br>
+
+        <input type="submit" value="Đặt hàng">
+    </form>
+    <footer>
+        <p>DinoStore</p>
+        <div> &copy Copyright design by Nguyen Quang Thang & DinoStore</div>
+    </footer>
+    <script src="JS/script.js"></script>
+
+
+</body>
+
+</html>
