@@ -320,9 +320,10 @@ marquee {
 }
 
 .shopping-cart {
+  /* display: block; */
   display: none;
   position: absolute;
-  top: 100px;
+  top: 80px;
   right: 0;
   width: 300px;
   background-color: #fff;
@@ -331,7 +332,12 @@ marquee {
   z-index: 1;
   border-radius: 5px;
 }
-
+.shopping-cart:hover{
+  display: block;
+}
+.cart-total button{
+  color: #ddd;
+}
 /* media  */
 #videotong {
   text-align: center;
@@ -339,7 +345,11 @@ marquee {
 
 #controls {
   margin-top: 20px;
-  display: none;
+  /* display: none; */
+
+}
+#controls button{
+  color: #ddd;
 }
 
 /* form và kiểm lỗi */

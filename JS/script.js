@@ -131,6 +131,10 @@ function updateCart() {
     totalPrice.innerText = `$${total}`;
   }
 }
+console.log(document.getElementsByClassName('giohanggne')[0])
+document.getElementsByClassName('giohanggne')[0].addEventListener('click',function(){
+document.getElementsByClassName('shopping-cart')[0].style.display = 'block';
+})
 
 const cartIcon = document.querySelector('.icontaskbar .giohanggne');
 const shoppingCart = document.querySelector('.shopping-cart');
@@ -204,7 +208,7 @@ function validateForme() {
   var address = document.getElementById("address").value;
 
   // Kiểm tra tên khách hàng
-  if (name == "") {
+  if(name =="") {
     alert("Vui lòng nhập tên khách hàng");
     return false;
   } else if (/\d/.test(name)) {
