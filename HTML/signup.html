@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinup</title>
+    <style>
+        .container {
+            position: relative;
+            width: 100;
+            height: 100vh;
+            /* background-image: url('../image/sinup.jpg'); */
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        #register-form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            z-index: 1;
+            /* height: 80vh; */
+            /* Thay đổi giá trị tùy ý */
+        }
+
+        #register-form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            z-index: 1;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+
+        Body {
+            background: url('../image/sinup.jpg')
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="register-form" onsubmit="return validateForm()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <input type="submit" value="Register">
+
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+            var email = document.getElementById("email").value;
+
+            // Check if username is empty
+            if (username == "") {
+                alert("Vui lòng nhập username.");
+                return false;
+            }
+
+            // Check if password is empty
+            if (password == "") {
+                alert("Vui lòng nhập password.");
+                return false;
+            }
+
+            // Check if confirm password is empty
+            if (confirmPassword == "") {
+                alert("Vui lòng nhập lại Password");
+                return false;
+            }
+
+            // Check if passwords match
+            if (password != confirmPassword) {
+                alert("Password không khớp vui lòng nhập lại");
+                return false;
+            }
+
+            // Check if email is empty
+            if (email == "") {
+                alert("Vui lòng nhập địa chỉ Email");
+                return false;
+            }
+
+            // Check if email is valid
+            var emailRegex = /\S+@\S+\.\S+/;
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            window.location.replace("../index.html");
+            // Registration successful
+            alert("Đăng kí thành công");
+            return true;
+        }
+    </script>
+</body>
+
+</html>
