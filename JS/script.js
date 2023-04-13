@@ -186,6 +186,7 @@ function tattieng() {
 }
 
 document.body.onload = function () {
+  video.currentTime = 5;
   video.play();
   video.addEventListener('ended', function () {
     video.currentTime = 0;
@@ -304,4 +305,12 @@ for (var i = 0; i < hearts.length; i++) {
   });
 }
 
+
+function setVolume(volume) {
+  var myplayer = document.getElementById("myplayer");
+  myplayer.volume = volume;
+}
+
+// Thiết lập volume ban đầu là 30%
+setVolume(0.3);
 
