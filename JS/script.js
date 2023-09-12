@@ -270,7 +270,7 @@ function validateForme() {
 var now = new Date().getTime();
 
 // Đặt thời gian kết thúc flash sale (sử dụng định dạng thời gian UTC)
-var countDownDate = new Date("2023-04-15T12:00:00Z").getTime();
+var countDownDate = new Date("2023-12-15T12:00:00Z").getTime();
 
 // Cập nhật đồng hồ đếm ngược mỗi 1 giây
 var x = setInterval(function () {
